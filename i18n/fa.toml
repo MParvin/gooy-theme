@@ -1,0 +1,22 @@
+[archive]
+  other = "بایگانی"
+[archive_text]
+  other = "مشاهده بایگانی"
+[author_profile]
+  other = "نمایه {{ . }}"
+[designed_by]
+  other = "طراحی از <a href = '{{ .url }}' target = '_blank' title = 'پروفایل لینکدین' rel = 'nonopener'>{{ .name }}</a>"
+[go_back]
+  other = "بازگشت"
+[latest_posts]
+  other = "آخرین نوشته‌ها"
+[link_copied]
+  other = "پیوند کپی شد"
+[not_found_text]
+  other = "صفحه‌ای که دنبال آن هستید پیدا نشد"
+[not_found_title]
+  other = "اوخ!"
+[share_story]
+  other = "اشتراک‌گذاری"
+[toggle_dark_mode]
+  other = "حالت تاریک"

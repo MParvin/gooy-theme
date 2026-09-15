@@ -56,6 +56,12 @@ const Setting: Collection = {
       options: ["", "light", "dark"]
     },
     {
+      type: "boolean",
+      name: "rtl",
+      label: "RTL",
+      description: "Enable right-to-left layout and VazirMatn for Persian or Arabic sites."
+    },
+    {
       type: "string",
       name: "ga_analytics",
       label: "Google Analytics ID",

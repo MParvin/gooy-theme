@@ -31,12 +31,12 @@
 
     &::after
       top: 0.5rem
-      right: 0
+      inset-inline-end: 0
 
   &-body
     box-shadow: 0 1.5rem 6rem rgba(0,0,0,0.17)
     position: fixed
-    right: 10px
+    inset-inline-end: 10px
     z-index: 1
     top: 100%
     opacity: 0
@@ -65,6 +65,8 @@
     font-size: 2em !important
     padding-top: 0 !important
     padding-bottom: 0 !important
+    [dir="rtl"] &
+      font-family: var(--font)
 
   &-close
     display: flex
@@ -72,7 +74,7 @@
     align-items: center
     position: absolute
     top: 0
-    right: 0
+    inset-inline-end: 0
     width: 100%
     cursor: pointer
     padding: 25px
@@ -102,7 +104,8 @@
 
   &-menu
     position: relative
-    padding: 10px 25px 10px 0
+    padding-block: 10px
+    padding-inline: 0 25px
     height: 100%
     max-width: 1024px
     margin: 0 auto

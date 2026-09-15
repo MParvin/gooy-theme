@@ -26,7 +26,7 @@
       flex-direction: column
       justify-content: center
       @media screen and (min-width: 42rem)
-        left: -2rem
+        inset-inline-start: -2rem
 
   &_thumb
     display: grid
@@ -46,7 +46,7 @@
       content: ''
       position: absolute
       top: 0
-      left: 0
+      inset-inline-start: 0
       width: 100%
       bottom: 0
       z-index: 1
@@ -105,14 +105,14 @@
   padding: 25px
 
 .point
-  margin-right: 15px
+  margin-inline-end: 15px
   color: var(--theme)
 
 @media screen and (min-width: 769px)
   .nav-menu a
     display: inline-block
     height: initial
-    text-align: left
+    text-align: start
 
   .mobile
     display: none
@@ -127,7 +127,7 @@
   background-color: var(--bg)
   box-shadow: 0 1rem 4rem rgba(0,0,0,0.17)
   iframe
-    left: 0
+    inset-inline-start: 0
     top: 0
     height: 100%
     width: 100%
@@ -159,7 +159,7 @@
     border-radius: 0.25rem
     text-align: center
     top: -2.25rem
-    right: 0
+    inset-inline-end: 0
 
   &_done::before
     content: attr(data-after)
@@ -207,7 +207,7 @@
       content: ""
       top: 0
       bottom: 0
-      left: 0
+      inset-inline-start: 0
       position: absolute
       height: 1rem
       background: var(--theme)
@@ -222,7 +222,7 @@
     &::before
       box-shadow: 0 1rem 2rem rgba(0,0,0,0.17)
       z-index: 2
-      right: 0
+      inset-inline-end: 0
       filter: brightness(0.75)
 
     &::after

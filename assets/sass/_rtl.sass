@@ -1,0 +1,32 @@
+[dir="rtl"]
+  h1, h2, h3, h4, h5, h6
+    text-transform: none
+
+  .upcase,
+  .post_tag,
+  .post_nav,
+  .post_meta,
+  .nav_item,
+  .attribution
+    text-transform: none
+
+  pre, .highlight, code
+    direction: ltr
+    text-align: left
+    unicode-bidi: isolate
+
+  .article:hover .article_meta.center_y
+    @media screen and (min-width: 769px)
+      transform: translateX(3rem)
+
+  .post_next::after
+    transform: scaleX(-1)
+
+  .pager
+    .icon_invert
+      transform: scale(0.50)
+    .pager_next .icon
+      transform: scale(0.50) rotate(180deg)
+
+  .never
+    background-position: left bottom

@@ -98,6 +98,24 @@ If your site is built from a copy of the exampleSite, the field is already inclu
 
 > The UI control for toggling darkmode will remain in place. This way, the user can decide which mode they would like to use while browsing your website
 
+### RTL (Persian / Arabic)
+
+Set `rtl = true` in `params.toml` (or Theme Params in Tina CMS) for Persian or Arabic sites. The whole theme switches to right-to-left layout and uses the self-hosted **VazirMatn** font.
+
+If your site is built from a copy of the exampleSite, the field is already included; you only need to set it to `true`.
+
+Also set Hugo’s language so UI chrome (archive, 404, share labels) uses the matching translation:
+
+```toml
+# hugo.toml
+languageCode = "fa" # or "ar"
+defaultContentLanguage = "fa"
+
+# params.toml
+rtl = true
+locale = "fa_IR" # or "ar_SA"
+```
+
 ### Custom 404 Page
 
 ![404 page](https://raw.githubusercontent.com/onweru/newsroom/master/images/404.png)
